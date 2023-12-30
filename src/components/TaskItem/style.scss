@@ -1,0 +1,125 @@
+@import "../../assets/style/scss/global/_global";
+
+.item {
+  &__Container {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    width: 100%;
+    padding: 24px 32px;
+    justify-content: space-between;
+    border-radius: 24px;
+    background: white;
+    @include mobile() {
+      flex-direction: column;
+      padding: 20px;
+      gap: 16px;
+    }
+  }
+  &__Task {
+    &__Right {
+      position: relative;
+      width: 50%;
+      display: flex;
+      justify-content: space-between;
+      @include mobile() {
+        flex-direction: column;
+        gap: 16px;
+      }
+    }
+    &__Left {
+      width: 50%;
+      display: flex;
+      justify-content: space-between;
+      @include mobile() {
+        flex-direction: column;
+        gap: 16px;
+      }
+      &__Task {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        &__Name {
+          color: #91929e;
+          font-family: Poppins;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+        &__Value {
+          color: #0a1629;
+          font-family: Poppins;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          width: 200px;
+          word-break: break-all;
+        }
+      }
+    }
+
+    &__Priority {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+      width: 72px;
+      p{
+        color: #91929E;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+      }
+    }
+    &__Status {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include mobile() {
+        display: block;
+      }
+      p {
+        color: #7d8592;
+        text-align: center;
+        font-family: Arial;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        display: flex;
+        width: 120px;
+        padding: 8px 16px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        background: #EDEEF0;
+        border-radius: 8px;
+      }
+    }
+    &__SubStatus {
+      width: 24px;
+      display: flex;
+      align-items: center;
+    }
+    &__Edit {
+      width: 24px;
+      display: flex;
+      align-items: center;
+    }
+    &__Delete {
+      width: 24px;
+      display: flex;
+      align-items: center;
+      @include mobile() {
+        position: absolute;
+        bottom: 0;
+        left: 40px;
+      }
+    }
+  }
+}

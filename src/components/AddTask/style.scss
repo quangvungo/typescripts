@@ -1,0 +1,159 @@
+@import "../../assets/style/scss/global/_global";
+.AddTask{
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+     background: rgba(0, 0, 0, 0.40);;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     
+    
+     &__TaskList{
+        width: 560px;
+        height: fit-content;
+        background-color: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 28px;
+        padding: 40px 60px;
+        border-radius: 24px;
+       
+        &__Title{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            align-self: stretch;
+            
+            &__btn{
+                display: flex;
+            justify-content: space-between;
+            align-items: center;
+                background-color: #FFFFFF;
+                width: 24px;
+                height: 24px;
+                border: 0;
+                
+            }
+            &__addTask{
+                color: #0A1629;
+                font-family: Poppins;
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 36px; /* 163.636% */
+            }
+        }
+        &__Body{
+            width: 440px;
+            height: 77px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 8px;
+            &__writing{
+                color: #7D8592;
+                font-family: Poppins;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;                
+            }
+            &__input{
+                width: 440px;
+                height: 48px;
+                display: flex;
+                padding: 12px 20px;
+                align-items: flex-start;
+                gap: 10px;     
+                border-radius: 8px;
+                border: 1px solid #D8E0F0;         
+            }
+        }
+        &__Priority{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 8px;
+            align-self: stretch;    
+            &__title{
+                color: #7D8592;
+                font-family: Poppins;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }  
+            &__btn{
+                display: flex;
+                align-items: flex-start;
+                gap: 12px;
+                &__High{
+                    width: 120px;
+                    height: 36px;
+                    flex-shrink: 0;
+                    border-radius: 10px;
+                    border: 1px solid #F73446;    
+                    color: #F73446; 
+                    background-color: #FFFFFF;             
+                }
+                &__Medium{
+                    width: 120px;
+                    height: 36px;
+                    flex-shrink: 0;
+                    border-radius: 10px;
+                    border: 1px solid #FFBD21;  
+                    color:#FFBD21;    
+                    background-color: #FFFFFF;             
+                }
+                &__Low{
+                    width: 120px;
+                    height: 36px;
+                    flex-shrink: 0;
+                    border-radius: 10px;
+                    border: 1px solid #0AC947;
+                    color:#0AC947;
+                    background-color: white;
+                }
+            }      
+        }
+       &__button{
+        display: flex;
+        align-items: center;
+        gap: 20px;  
+        &__Add{
+            width: 114px;
+            height: 40px;
+            flex-shrink: 0;
+            border-radius: 10px;
+            border: 1px solid #713FFF;
+            background: #713FFF;   
+            color: #FFF;
+            text-align: center;
+            font-family: Poppins;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 16px; /* 100% */                 
+        }  
+        &__Cancel{
+            border-radius: 10px;
+            border: 1px solid #D8E0F0;
+            background-color: #FFFFFF;
+            width: 118px;
+            height: 40px;
+            flex-shrink: 0;
+            color: #7D8592;
+            text-align: center;
+            font-family: Poppins;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 16px; /* 100% */               
+        }  
+       } 
+     }
+}
